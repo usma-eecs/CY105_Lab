@@ -89,7 +89,7 @@ def main():
         splash = displayio.Group()
         display.root_group = splash
 
-        #SENSE
+        
         f_avg = get_average_temperature() # Get average temperature
 
         # Updates the min and max temperatures based on the current reading
@@ -98,7 +98,7 @@ def main():
         elif f_avg < min_temp:
             min_temp = f_avg
 
-        #THINK
+        
         # Sets the fan speed based off the current and minimum servo temperature
         speed = (f_avg-min_temp_servo)/8
 
@@ -110,7 +110,7 @@ def main():
 
         print((speed,)) #Display the speed to the Mu editor console and plotter
 
-        #ACT
+        
         my_servo.throttle = speed
 
         # Depending on where the switch is, either display the temperature using
