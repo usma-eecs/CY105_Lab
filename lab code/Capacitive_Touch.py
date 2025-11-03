@@ -1,4 +1,5 @@
 from adafruit_circuitplayground import cp
+import time
 
 def capacitive_touch():
     while True:
@@ -7,7 +8,8 @@ def capacitive_touch():
         if cp.touch_A2:
             print("Touched pad A2")
     # Note that without the LCD attached, A3-A6 and the TX pads can be used the same way
-
+    time.sleep(0.1)  # Small delay to avoid overwhelming the output
+    
 def main():
     capacitive_touch()
 
