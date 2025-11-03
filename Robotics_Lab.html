@@ -283,46 +283,20 @@
                     <ol class="list-group list-group-numbered">
                         <li class="list-group-item d-flex justify-content-between align-items-start">
                             <div class="ms-2 me-auto">
-                                Copy the code below to your device and run it.
+                                <p>This program below <strong>turns your device into a <u>robot</u></strong> because it performs the <i>“sense-think-act”</i> cycle that all robots do by reading the temperature sensor <i>(sense)</i>, calculating how fast to spin the servo based on that temperature <i>(think)</i>, and then sending a signal to the servo motor to make it spin at an appropriate speed <i>(act)</i>.</p>
+                                <p>Copy the code below to your device and run it by clicking the "Save" button. The motor will be off or spinning slowly at low temperatures (such as ambient room temperature) and will spin rapidly at higher temperatures (like when you touch the temperature sensor with a finger and heat it up). </p>    
                                 <pre><code class="Lab_Robot_code language-python"></code></pre>
                             </div>
+                                
+                                
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-start">
                             <div class="ms-2 me-auto position-relative">
-                                <ol class="alpha">
-                                    <li>This program enables your device to perform the “sense-think-act”
-                                        cycle that all
-                                        robots do by reading the temperature sensor (sense), calculating how
-                                        fast to
-                                        spin the servo based on that temperature (think), and then sending a
-                                        signal to
-                                        the servo motor to make it spin at an appropriates speed (act).</li>
-                                    <li>First, take note of lines 75 and 85, which define “base_temp” and
-                                        “min_temp_servo”, respectively. These variables define, for our program, what
-                                        temperature
-                                        value should correspond to the lowest motor speed (the lowest motor
-                                        speed is 0).
-                                    </li>
-                                    <li>Next, look at the main loop beginning on line 87. Inside the loop,
-                                        we have the
-                                        code necessary to sense-think-act. Sense: Lines 92-99, Think: Lines
-                                        101-111, and
-                                        Act: Line 114.</li>
-                                    <li>Now run the program using the “Save” button. The motor is either off
-                                        or spinning
-                                        slowly for low temperatures (such as the ambient room temperature)
-                                        and spinning
-                                        rapidly for high temperatures (like when you touch the temperature
-                                        sensor with a finger and heat it up).</li>
-                                    <li>Note: Your temperature and RPM may vary from the video below
-                                        depending on the
-                                        room
-                                        temperature
-                                    </li>
-                                </ol>
-                                <video style="max-width: 300px; width: 30%" loop autoplay playsinline muted source
-                                    src="Videos/Robot/robot_screen.mp4" type="video/mp4">
-                                </video>
+                                <p>It is your job to trace the remaining above program and identify what lines represent the SENSING, THINKING, and ACTING for this robot. </p>
+                                <p>Note: Your temperature and RPM may vary from the image below depending on the room temperature.</p>
+                                
+                                <img src="Images/Robot/robTempSens.png" class="img-fluid" alt="Temperature Sensor Robot"
+                                style="height: 300px"> 
                             </div>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -330,8 +304,7 @@
                                 <p style="font-size: 18em; color: red;">
                                     <i class="fa-solid fa-hand"></i>
                                 </p>
-                                <p class="text-white bg-danger">Once complete, verify this with your instructor. </p>
-                                <p class="text-white bg-danger">Explain to your instructor where the Sense, Think, and Act steps are present in the code - this is part of your grade!</p>
+                                <p class="text-white bg-danger">After you review the program and locate the relevant lines, you must explain to your instructor which parts of the code perform the Sense, Think, and Act steps. Be specific by referencing the line numbers. This explanation is required and is part of your grade!</p>
                             </div>
                         </li>
                     </ol>
